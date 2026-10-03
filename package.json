@@ -1,0 +1,51 @@
+{
+  "name": "dsh-multiplatform-balance",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness skill plugin: query multi-platform model account balances (DeepSeek, Doubao/Volcengine, Qwen/Aliyun, Hunyuan/Tencent and more).",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjzkhy/dsh-multiplatform-balance.git"
+  },
+  "homepage": "https://github.com/bjzkhy/dsh-multiplatform-balance#readme",
+  "bugs": {
+    "url": "https://github.com/bjzkhy/dsh-multiplatform-balance/issues"
+  },
+  "author": "bjzkhy",
+  "license": "MIT",
+  "keywords": [
+    "dsh-plugin",
+    "dsh-skill",
+    "balance",
+    "deepseek",
+    "doubao",
+    "qwen",
+    "hunyuan",
+    "multi-platform-balance"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-skill": "0.1.7-rc.2 || 0.1.5-rc.3 || 0.1.5-rc.2 || 0.1.5-rc.1",
+    "@deepseek-ai/dsh-tools": "0.1.7-rc.2 || 0.1.5-rc.3 || 0.1.5-rc.2 || 0.1.5-rc.1"
+  },
+  "engines": {
+    "dsh": ">=0.1.5-rc.1"
+  }
+}
