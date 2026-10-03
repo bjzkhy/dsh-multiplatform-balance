@@ -1,0 +1,4 @@
+# dsh-multiplatform-balance: insert the skill/tool plugin into the profile loader.
+- insert:
+    - id: dsh-multiplatform-balance
+      name: "dsh-multiplatform-balance"
