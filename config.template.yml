@@ -1,0 +1,28 @@
+# dsh-multiplatform-balance 配置模板
+- id: dsh-multiplatform-balance
+  config:
+    currency: "CNY"
+    balanceCacheTtl: 60
+    balance:
+      "deepseek":
+        type: deepseek
+        apiKey: ""
+        currency: "CNY"
+      "doubao":
+        type: volcengine
+        accessKey: ""
+        secretKey: ""
+        region: "cn-north-1"
+        version: "2022-01-01"
+        currency: "CNY"
+      "qwen":
+        type: aliyun
+        accessKeyId: ""
+        accessKeySecret: ""
+        currency: "CNY"
+      "hunyuan":
+        type: tencent
+        secretId: ""
+        secretKey: ""
+        region: "ap-beijing"
+        currency: "CNY"
